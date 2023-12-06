@@ -92,6 +92,8 @@ class RNA{
     }
 }
 
+export default RNA;
+
 
 
 
