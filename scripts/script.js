@@ -1,7 +1,7 @@
-import utils from './utils.js'
-import utils from './RNA.js'
-import utils from './controls.js'
-import controls from './controls.js';
+import utils from '../utils.js'
+import utils from '../RNA.js'
+import utils from '../controls.js'
+import controls from '../controls.js';
 
 const SAMPLES = 20 
 const game = Runner.instance_;
