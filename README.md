@@ -8,9 +8,9 @@ Criação de uma inteligência Artificial
 
 ### Tópicos 
 
-:small_blue_diamond: [Descrição sobre IA](#descricao-sobre-ia)
+:small_blue_diamond: [Descrição sobre IA](#descrição-sobre-ia)
 
-:small_blue_diamond: [Função da IA criada](#funcao-da-ia-criada)
+:small_blue_diamond: [Função da IA criada](#função-da-ia-criada)
 
 :small_blue_diamond: [Pré-requisitos](#pré-requisitos)
 
