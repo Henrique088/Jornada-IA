@@ -4,6 +4,8 @@ Criação de uma inteligência Artificial
 </p>
 <p align="center" >
  <img src="https://img.shields.io/static/v1?label=JavaScript&message= _&color=blue&style=for-the-badge&logo=JavaScript"/>
+ <img src="https://img.shields.io/static/v1?label=HTML&message= _&color=blue&style=for-the-badge&logo=HTML5"/>
+ <img src="https://img.shields.io/static/v1?label=CSS&message= _&color=blue&style=for-the-badge&logo=CSS3"/>
 <img src="http://img.shields.io/static/v1?label=STATUS&message=CONCLUIDO&color=RED&style=for-the-badge"/>
 </p>
 
