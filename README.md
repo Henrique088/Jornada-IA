@@ -3,6 +3,7 @@
 Criação de uma inteligência Artificial 
 </p>
 <p align="center" >
+ <img src="https://img.shields.io/static/v1?label=JavaScript&message= _&color=blue&style=for-the-badge&logo=JavaScript"/>
 <img src="http://img.shields.io/static/v1?label=STATUS&message=CONCLUIDO&color=RED&style=for-the-badge"/>
 </p>
 
@@ -11,6 +12,8 @@ Criação de uma inteligência Artificial
 :small_blue_diamond: [Descrição sobre IA](#descrição-sobre-ia)
 
 :small_blue_diamond: [Função da IA criada](#função-da-ia-criada)
+
+:small_blue_diamond: [Explicação do código](#explicação-do-código)
 
 :small_blue_diamond: [Alert](#alert)
 
@@ -27,6 +30,11 @@ A Inteligência Artificial (IA) é um campo da ciência da computação que se d
 
  A IA feita visa criar um player capaz de jogar o famoso jogo Dino T-Rex do google, sem que o mesmo perca. Para isso foi feito arquivos base de uma IA como o arquivo 
  RNA.js e o utils.js. E os demais arquivos implementam a mecânica do jogo e chama a base da IA para ir fazendo o treinamento.
+
+ ## Explicação do código
+
+https://www.notion.so/Explica-o-do-c-digo-e3b8fac71305468ea050c56cac5d7bd8?pvs=4
+ 
 
  ## Alert 
 
