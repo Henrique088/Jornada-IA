@@ -1,7 +1,6 @@
-import utils from '../utils.js'
-import utils from '../RNA.js'
-import utils from '../controls.js'
-import controls from '../controls.js';
+import utils from './utils.js';
+import RNA from './RNA.js';
+import controls from './controls.js';
 
 const SAMPLES = 20 
 const game = Runner.instance_;
@@ -12,23 +11,23 @@ let bestScore = 0;
 let bestRNA = null;
 
 function fillDinoList (){
-    for (let i=0; i< SAMPLES; i++){
+    for (let i=0; i < SAMPLES; i++){
         dinoList[i] = new RNA(3, [10, 10, 2]);
         dinoList[i].load(bestRNA);
-        if (i>0) dinoList[i].mutate(0.5)
+        if (i > 0) dinoList[i].mutate(0.5)
     }
     console.log('Lista de dinossauros criadas');
 }
 
 setTimeout(() =>{
     fillDinoList()
-    controls.dispath('jump');
+    controls.dispatch('jump');
 }, 1000)
 
-setInterval(()=>{
-    if (!game.activated) return
+setInterval(()=> {
+    if (!game.activated) return;
 
-    const dino = dinoList[dinoIndex]
+    const dino = dinoList[dinoIndex];
 
     if( game.crashed) {
         if(dino.score > bestScore){
@@ -36,7 +35,7 @@ setInterval(()=>{
             bestRNA = dino.save();
             console.log('Melhor pontuação:', bestScore);
         }
-        dinoIndex++
+        dinoIndex++;
     }
 
     if (dinoIndex === SAMPLES){
@@ -44,28 +43,28 @@ setInterval(()=>{
         dinoIndex = 0;
         bestScore = 0;
     }
-    game.restart()
+    game.restart();
 
-    const {tRex, horizon, currentSpeed, distanceRan, dimension} = game 
-    dino.score = distanceRan - 2000
+    const {tRex, horizon, currentSpeed, distanceRan, dimensions} = game; 
+    dino.score = distanceRan - 2000;
 
     const player = {
         x: tRex.xPos,
         y: tRex.yPos,
-        speed: currentSpeed
+        speed: currentSpeed,
     };
 
     const [obstacle] = horizon.obstacles
-    .map((obstacle) =>{
+    .map((obstacle)=> {
         return{
             x: obstacle.xPos,
-            y: obstacle.yPos
+            y: obstacle.yPos,
         }
     })
     .filter((obstacle) => obstacle.x > player.x)
 
     if (obstacle){
-        const distance = -1 - (utils.getDistance(player, obstacle));
+        const distance = 1 - (utils.getDistance(player, obstacle)/ dimensions.WIDTH);
         const speed = player.speed / 6;
         const height = Math.tanh(105 - obstacle.y)
 
@@ -76,7 +75,7 @@ setInterval(()=>{
         ]);
 
         if (jump === crouch) return;
-        if(jump) constrols.dispath('jump')
+        if(jump) controls.dispatch('jump')
         if (crouch) controls.dispatch('crouch')
     };
   
@@ -85,5 +84,5 @@ setInterval(()=>{
 
 /*const s = document.createElement('script');
 s.type = 'module';
-s.src = 'http://localhost:5500/script.js'
+s.src = 'http://localhost:5500/scripts/script.js'
 document.body.appendChild(s); */
