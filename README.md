@@ -3,7 +3,7 @@
 Criação de uma inteligência Artificial 
 </p>
 <p align="center" >
-<img src="http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=RED&style=for-the-badge"/>
+<img src="http://img.shields.io/static/v1?label=STATUS&message=CONCLUIDO&color=RED&style=for-the-badge"/>
 </p>
 
 ### Tópicos 
@@ -11,6 +11,8 @@ Criação de uma inteligência Artificial
 :small_blue_diamond: [Descrição sobre IA](#descrição-sobre-ia)
 
 :small_blue_diamond: [Função da IA criada](#função-da-ia-criada)
+
+:small_blue_diamond: [Alert](#alert)
 
 :small_blue_diamond: [Pré-requisitos](#pré-requisitos)
 
@@ -25,22 +27,38 @@ A Inteligência Artificial (IA) é um campo da ciência da computação que se d
 
  A IA feita visa criar um player capaz de jogar o famoso jogo Dino T-Rex do google, sem que o mesmo perca. Para isso foi feito arquivos base de uma IA como o arquivo 
  RNA.js e o utils.js. E os demais arquivos implementam a mecânica do jogo e chama a base da IA para ir fazendo o treinamento.
+
+ ## Alert 
+
+ Para o funcionamento da IA é somente necessário os arquivos contidos na pasta script. 
  
 ## Pré requisitos
 
-Ter um navegador instaldo em sua máquina
+* Ter o google chrome instalado em sua máquina
+* Ter o visual studio code com a extenção live server
 
 ## Como rodar a aplicação :arrow_forward:
 
-Abra o aquivo index.hmtl em seu navegador: 
+1. Baixe o código em sua máquina. Exclua os arquivos exceto a pasta script.
+
+2. Abra a pasta com o visual studio code.
+
+3. Execute  o live server.
+
+4. Digite no seu navegador google chrome
 
 ```
-#
+chrome://dino
 ```
 
-Depois...
+5. Depois de um f12 para abrir o inspecionar.
+
+6. E por fim vá na aba console e digite: 
 ```
-#
+const s = document.createElement('script');
+s.type = 'module';
+s.src = 'http://localhost:5500/scripts/script.js'
+document.body.appendChild(s);
 
 ```
 
