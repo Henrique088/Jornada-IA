@@ -1,9 +1,10 @@
+// Gerador de números aleatórios
 function randomRange(min, max){
     return Math.random() * (max - min) + min;
 
 }
 
-
+// Função de interpolação linear
 function lerp(a, b, t){
     return a + (b - a) * t;
 }

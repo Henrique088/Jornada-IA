@@ -74,9 +74,9 @@ setInterval(()=> {
             height,
         ]);
 
-        if (jump === crouch) return;
+        if (jump === crounch) return;
         if(jump) controls.dispatch('jump')
-        if (crouch) controls.dispatch('crouch')
+        if (crounch) controls.dispatch('crounch')
     };
   
 }, 100);
